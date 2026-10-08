@@ -23,8 +23,7 @@ static char *copy_text(const char *text)
     return copy;
 }
 
-static struct store_item *find_item(const struct store *store,
-                                    const char *key)
+static struct store_item *find_item(const struct store *store, const char *key)
 {
     struct store_item *item = store->first;
 
@@ -39,10 +38,7 @@ static struct store_item *find_item(const struct store *store,
     return NULL;
 }
 
-void store_init(struct store *store)
-{
-    store->first = NULL;
-}
+void store_init(struct store *store) { store->first = NULL; }
 
 void store_free(struct store *store)
 {

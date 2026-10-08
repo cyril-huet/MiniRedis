@@ -114,10 +114,9 @@ int handle_command(struct store *store, const char *line, char *response,
         return answer(response, response_size, "OK");
     }
 
-    if (key == NULL && (strcmp(command, "GET") == 0 ||
-                        strcmp(command, "DEL") == 0 ||
-                        strcmp(command, "EXISTS") == 0 ||
-                        strcmp(command, "INCR") == 0))
+    if (key == NULL &&
+        (strcmp(command, "GET") == 0 || strcmp(command, "DEL") == 0 ||
+         strcmp(command, "EXISTS") == 0 || strcmp(command, "INCR") == 0))
     {
         return answer(response, response_size, "ERR key is missing");
     }

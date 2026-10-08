@@ -4,10 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-static void print_help(void)
-{
-    printf("usage: miniredis-server [-p port]\n");
-}
+static void print_help(void) { printf("usage: miniredis-server [-p port]\n"); }
 
 static int valid_port(int port)
 {
