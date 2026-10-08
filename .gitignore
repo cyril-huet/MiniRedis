@@ -1,0 +1,4 @@
+miniredis-server
+miniredis-cli
+*.o
+.DS_Store
