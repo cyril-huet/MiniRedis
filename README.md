@@ -1,5 +1,5 @@
 # MiniRedis
-
+[![CI](https://github.com/cyril-huet/MiniRedis/actions/workflows/ci.yml/badge.svg)](https://github.com/cyril-huet/MiniRedis/actions/workflows/ci.yml)
 MiniRedis is a small Redis-like server written in C99.
 
 The project is meant to practise the basics of network programming in C:
